@@ -1,0 +1,35 @@
+<%-include('partials/header.ejs') %>
+
+<div class="flex justify-center mt-24 mb-24 px-4 py-12 max-w-10xl mx-auto w-2/3 h-3/4 bg-gray-200 border border-gray-300 rounded outline outline-1 outline-black-4 shadow-lg shadow-slate-500">
+    <div class="grid grid-cols-4 grid-rows-3">
+        <div class="col-start-2 col-span-2 h-fit">
+            <h1 class="mt-10 mb-10 font-serif text-center text-3xl font-semibold">
+                Welcome to My Capstone Project!
+            </h1>
+            <p class="text-center text-xl leading-10">
+                The goal of this project is to create a Blog web application using Node.js, Express.js, and EJS. The application will allow users to create and view blog posts. Posts will not persist between sessions as no database will be used in this version of the application.
+            </p>
+        </div>
+
+        <div class=" col-start-2 col-span-2">
+            <h2 class="font-serif text-center text-3xl mb-10 font-semibold"> Features </h2>
+                <ol class="list-decimal list-inside font-sans text-xl leading-10">
+                    <li><b>Post Creation</b>: Users should be able to create new posts.</li>
+                    <li><b>Post Viewing:</b> The home page should allow the user to view all their posts.</li>
+                    <li><b>Post Update/Delete:</b> Users should be able to edit and delete posts as needed.</li>
+                    <li><b>Styling:</b> The application should be well-styled and responsive, ensuring a good user experience on both desktop and mobile devices.</li>
+                </ol>
+        </div>
+
+        <div class="col-start-2 col-span-2">
+            <h2 class="font-serif text-center text-3xl mt-20 mb-10 font-semibold"> Technical Requirements </h2>
+                <ol class="list-decimal list-inside font-sans text-xl leading-10">
+                    <li><b>Node.js & Express.js:</b> The application will be a web server built using Node.js and Express.js. Express.js will handle routing and middleware.</li>
+                    <li><b>EJS:</b> EJS will be used as the templating engine to generate dynamic HTML based on the application's state.</li>
+                </ol>
+        </div>
+    </div>
+</div>
+
+
+<%-include('partials/footer.ejs') %>

@@ -1,0 +1,25 @@
+<%-include('partials/header.ejs') %>
+<div class="flex justify-center mt-24 px-4 py-12 max-w-10xl mx-auto w-2/3 h-3/4 bg-gray-200 border border-gray-300 rounded outline outline-1 outline-black-4 shadow-lg shadow-slate-500">
+<form action="/submit" method="POST" class="px-4 max-w-3xl mx-auto space-y-6">
+    <div>
+        <h1 class="text-3xl font-semibold font-serif">Blog Post</h1>
+        <p class="text-sm text-gray-400">Create a blog post by typing in the designated area and hitting the submit button</p>
+    </div>
+
+    <div class="w-2/3">
+        <label class="font-semibold text-lg">Title</label>
+        <input class="border border-gray-500 block py-2 px-2 w-full rounded focus:outline-none focus:border-purple-400 focus:ring-1" type="text" name="title"/>
+    </div>
+
+    <div>
+        <label class="font-semibold text-lg">Blog Post</label>
+        <textarea class="border border-gray-500 block py-4 px-1 h-60 w-full rounded focus:outline-none focus:border-purple-400 focus:ring-1" type="text" name="blog"></textarea>
+    </div>
+
+    <div class="flex flex-row-reverse">
+        <input type="submit" value="Submit Post" class="bg-green-600 px-2 py-3 rounded font-semibold text-white hover:bg-green-800 shadow-md transition duration-300"/>
+    </div>
+</form>
+</div>
+
+<%-include('partials/footer.ejs') %>
